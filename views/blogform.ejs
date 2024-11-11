@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/content.css">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h1>Blog</h1>
+    <p>Type your Form</p>
+    
+    <% if (!(locals.blogarray2)){ %>
+    
+
+    <form action="/submit" method="POST">
+
+        <div class="smallInfo">
+        <div class="alignInfo">
+        <label for="fname">Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        </div>
+        <div class="alignInfo">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+        </div>
+        </div>
+
+        <div id = "topic">
+          <label for="topic" >Topic:</label><br>
+          <select name="topic" >
+            <option value="Technology">Technology</option>
+            <option value="Sports">Sports</option>
+            <option value="Politics">Politics</option>
+            <option value="Crime">Crime</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Romance">Romance</option>
+            <option value="Fitness">Fitness</option>
+            <option value="Health">Health</option>
+            <option value="Other">Other</option>
+          </select>
+          </div>
+        <br>
+        <label for="bloginput">Info:</label><br>
+        <input type="text" id="bloginput" name="bloginput" class="bigInfo"><br>
+        <input type="submit" id="blogsubmit" value="Submit Blog">
+        <input type="hidden" name="replaceId" value=<%=-1%>><br>
+      </form>
+    <%}%>
+    
+    <% if (locals.blogarray2){ %>
+   
+    <form action="/submit" method="POST">
+        <pre>
+        
+        <label for="fname">Name:</label><br>
+        <input type="text" id="fname" name="fname" value='<%=locals.blogarray2%>'>><br>
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" value='<%=locals.blogarray3%>'><br>
+
+        <div id = "topic">
+          <label for="topic" >Topic:</label><br>
+          <select name="topic" >
+            <option value="Technology">Technology</option>
+            <option value="Sports">Sports</option>
+            <option value="Politics">Politics</option>
+            <option value="Crime">Crime</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Romance">Romance</option>
+            <option value="Fitness">Fitness</option>
+            <option value="Health">Health</option>
+            <option value="Other">Other</option>
+          </select>
+          </div>
+        <label for="bloginput">Info:</label><br>
+        <input type="text" id="bloginput" name="bloginput" value='<%=locals.blogarray4%>' class="bigInfo"><br>
+        <input type="submit" id="blogsubmit" value="Submit Blog">
+        <input type="hidden" name="replaceId" value=<%=locals.blogarray5%>><br>
+        </pre>
+      </form>
+      <%}%>
+</body>
+</html>

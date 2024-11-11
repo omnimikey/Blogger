@@ -1,0 +1,180 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+header,
+footer {
+  flex: 0 0 auto;
+}
+
+main {
+  text-align: center;
+  padding: 5vmin;
+  flex: 1 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  color: grey;
+}
+
+.profile {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+form .smallInfo{
+  display: inline-flex;
+  margin-top: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+form {
+  margin-top: 40px;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+form label {
+  display: inline-block;
+
+}
+
+
+
+.alignInfo{
+  display: block;
+}
+
+.feedback-input {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 10px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 5px solid #3586ff;
+  transition: all 0.3s;
+  padding: 20px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #3586ff;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+#blogsubmit {
+  width: 80%;
+}
+
+[type="submit"]:hover {
+  background: #3586ff;
+}
+
+input[type=text] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+.bigInfo{
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+.bigInfo{
+  height: 300px;
+}
+
+.card-body{
+  text-align: center;
+  justify-content: center;
+  border: brown;
+  background-color: silver;
+  width: 80%;
+  margin: 0 auto;
+  
+}
+
+h4{
+  text-align: center;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+#buttonForm{
+  display: flex;
+  gap: 20px;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  justify-content: space-evenly;
+}
+
+[type="submit"] {
+  width: 200px;
+  background: #3586ff;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.topic {
+  justify-content: center;
+  display: flex;
+  height: 78px;
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+#blogImage {
+
+  background-blend-mode: lighten;
+  mix-blend-mode: multiply; 
+  height: 55px;
+  width: 75px;
+  display: flex;
+  justify-content:flex-start;
+}
